@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Auto Sonar con JavaScript</title>
+</head>
+
+<body>
+  <h1>Auto Sonar con JavaScript</h1>
+
+  <audio id="audio" src="src/labebe.mp3" autoplay loop></audio>
+
+  <script>
+    // Obtén una referencia al elemento de audio
+    const audio = document.getElementById('audio');
+
+    // Escucha el evento 'loadedmetadata' para asegurarte de que el archivo de audio esté cargado
+    audio.addEventListener('loadedmetadata', () => {
+      // Reproduce el archivo de audio
+      audio.play();
+    });
+  </script>
+</body>
+
+</html>
